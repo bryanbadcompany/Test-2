@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Test 2</title>
+    <script src="Javascript/test2.js"></script>
+    <link rel="stylesheet" href="Styles/test2.css" type="text/css">
+</head>
+
+<body>
+<section id="titlesection">
+    <select onchange="SectionSelect()" id="dropMenu">
+        <option>Select an Option</option>
+        <option>Display Category List</option>
+        <option>Change Category Description</option>
+        <option>Add New Category</option>
+        <option>Delete Category</option>
+    </select>
+</section>
+<section id="section1">
+    <h1>Get All Categories</h1>
+    <br>
+    <button onclick="GetCategories()">Click</button>
+    <br>
+    <table id="catResult"></table>
+</section>
+
+<section id="section2">
+    <h1>Change Category Description</h1>
+    <br>
+    <label>Enter Category ID</label>
+    <br>
+    <input type="text" id="catIDInput">
+    <br>
+    <label>Enter Category Description</label>
+    <br>
+    <input type="text" id="catDescInput">
+    <br>
+    <button onclick="DescriptionUpdate()">Add To Category List</button>
+    <br>
+    <br>
+    <label id="addSuccess"></label>   
+</section>
+
+<section id="section3">
+    <h1>Add a New Category</h1>
+    <br>
+    <label>Enter Category Name</label>
+    <br>
+    <input type="text" id="newCatNameInput">
+    <br>
+    <label>Enter Category Description</label>
+    <br>
+    <input type="text" id="newCatDescInput">
+    <br>
+    <button onclick="AddCategory()">Click</button>
+    <br>
+    <label id="newCatSuccess"></label>
+    
+</section>
+<section id="section4">
+    <h1>Delete Category</h1>
+    <br>
+    <label>Input Category ID to be Deleted</label>
+    <input type="text" id="deleteCategoryID">
+    <br>
+    <button onclick="ConfirmInput()">Delete</button>
+    <br>
+    <label id="deletionResult"></label>
+</section>
+<br>
+<br>
+<br>
+<footer id="footer">
+    <label>This app has been developed by Bryan King
+    <br> It is for purposes of education and promotion of his web development skills.</label>
+    
+</footer>
+
+
+</body>
+</html>
